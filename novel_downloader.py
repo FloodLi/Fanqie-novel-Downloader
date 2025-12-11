@@ -36,8 +36,8 @@ class APIManager:
     """
     
     def __init__(self):
-        self.base_url = CONFIG["api_base_url"]
-        self.endpoints = CONFIG["endpoints"]
+        self.base_url = "http://qkfqapi.vv9v.cn" # CONFIG["api_base_url"]
+        self.endpoints = "http://qkfqapi.vv9v.cn" # CONFIG["endpoints"]
         self._tls = threading.local()
         self._async_session: Optional[aiohttp.ClientSession] = None
         self.semaphore = None
