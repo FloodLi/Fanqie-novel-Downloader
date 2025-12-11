@@ -78,7 +78,7 @@ jobs:
           print(f"保存路径: {save_path}")
           print(f"使用线程数: {threads}")
           print(f"输出格式: {output_format}")
-          novel_downloader.Run(2,novel_id, save_path, output_format)
+          novel_downloader.Run(novel_id, save_path, output_format)
           print("下载完成！")
 
           # 列出下载的文件
