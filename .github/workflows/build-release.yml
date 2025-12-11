@@ -1,12 +1,12 @@
 name: Build and Release
 
 on:
-  push:
-    branches: [ main, master ]
-    tags:
-      - 'v*'
-  pull_request:
-    branches: [ main, master ]
+  # push:
+  #   branches: [ main, master ]
+  #   tags:
+  #     - 'v*'
+  # pull_request:
+  #   branches: [ main, master ]
   workflow_dispatch:
 
 permissions:
@@ -577,3 +577,4 @@ jobs:
           prerelease: false
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
