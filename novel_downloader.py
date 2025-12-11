@@ -616,7 +616,11 @@ def create_txt(name, author_name, description, chapters, save_path):
 def Run(book_id, save_path, file_format='txt', start_chapter=None, end_chapter=None, selected_chapters=None, gui_callback=None):
     """运行下载"""
 
-    print(f"运行下载 Run: book_id: {book_id}, save_path: {save_path}, file_format: {file_format}")
+    print("运行下载")
+    print(f"Run ID: {book_id}")
+    print(f"Run path: {save_path}")
+    print(f"Run format: {file_format}")
+    
     api = get_api_manager()
     if api is None:
         return False
