@@ -146,8 +146,8 @@ MESSAGES = {
         "up_desc_linux_release": "发布版",
         
         # watermark.py
-        "wm_watermark_full": "当前小说使用https://github.com/POf-L/Fanqie-novel-Downloader免费下载器下载，购买的请立即差评并申请退款和举报！",
-        "wm_watermark_simple": "当前小说使用https://github.com/POf-L/Fanqie-novel-Downloader下载",
+        "wm_watermark_full": "",
+        "wm_watermark_simple": "",
 
         # web_app.py (New)
         "web_init": "初始化...",
@@ -420,4 +420,5 @@ def t(key, *args):
             return msg.format(*args)
         except Exception:
             return msg
+
     return msg
